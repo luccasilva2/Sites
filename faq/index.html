@@ -1,0 +1,88 @@
+<!-- Página para perguntas frequentes com perguntas e respostas detalhadas e filtro de busca, com estilo personalizado -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>FAQ</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.faq-search {
+    margin-bottom: 20px;
+}
+.faq-search input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+}
+dl {
+    margin-top: 20px;
+}
+dt {
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 15px;
+}
+dd {
+    margin-left: 20px;
+    color: #555;
+}
+</style>
+<script>
+function filterQuestions() {
+    const input = document.getElementById('searchInput');
+    const filter = input.value.toLowerCase();
+    const dtElements = document.querySelectorAll('dt');
+    dtElements.forEach(dt => {
+        const text = dt.textContent.toLowerCase();
+        dt.style.display = text.includes(filter) ? '' : 'none';
+        dt.nextElementSibling.style.display = text.includes(filter) ? '' : 'none';
+    });
+}
+</script>
+</head>
+<body>
+<a href="../index.html" class="back-button">Voltar</a>
+<header>
+<h1>FAQ - Perguntas Frequentes</h1>
+<p>Encontre respostas para as dúvidas mais comuns dos usuários.</p>
+</header>
+<main>
+<div class="faq-container">
+<div class="faq-search">
+<input type="text" id="searchInput" onkeyup="filterQuestions()" placeholder="Buscar perguntas...">
+</div>
+<h2>Perguntas Frequentes</h2>
+<dl>
+<dt>Como faço para me registrar?</dt>
+<dd>Você pode se registrar clicando no link de registro e preenchendo o formulário com seus dados pessoais.</dd>
+<dt>Como recupero minha senha?</dt>
+<dd>Use a opção de recuperação de senha na página de login para receber um email com instruções.</dd>
+<dt>Quais formas de pagamento são aceitas?</dt>
+<dd>Aceitamos cartões de crédito, débito e boleto bancário.</dd>
+<dt>Como faço para acompanhar meu pedido?</dt>
+<dd>Você pode acompanhar o status do seu pedido na seção de histórico de compras.</dd>
+<dt>Posso cancelar um pedido?</dt>
+<dd>Sim, pedidos podem ser cancelados dentro do prazo de 24 horas após a compra.</dd>
+<dt>Como faço para trocar um produto?</dt>
+<dd>Entre em contato com o suporte para iniciar o processo de troca.</dd>
+<dt>Quais são os custos de envio?</dt>
+<dd>Os custos de envio variam de acordo com a localização e peso do produto. Consulte a página de checkout para detalhes.</dd>
+<dt>Como faço para deixar uma avaliação?</dt>
+<dd>Após receber o produto, você pode deixar uma avaliação na página de avaliações.</dd>
+</dl>
+</div>
+</main>
+<footer>
+<p>&copy; 2023 Sistema Web</p>
+</footer>
+</body>
+</html>

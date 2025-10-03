@@ -1,0 +1,107 @@
+<!-- Página principal do sistema com visão geral de produtos, vendas e usuários -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a href="../index.html" class="back-button">Voltar</a>
+<header>
+<h1>Dashboard</h1>
+<p>Visão geral do sistema em tempo real.</p>
+<img src="../img/ex2.jpg" alt="Dashboard gráfico" style="width: 100%; max-width: 600px; margin: 20px auto; display: block;">
+</header>
+<main>
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+<div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; margin: 10px;">
+<h3>Produtos</h3>
+<p style="font-size: 2em; color: #007bff;">100</p>
+<p>Total de produtos cadastrados.</p>
+</div>
+<div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; margin: 10px;">
+<h3>Vendas</h3>
+<p style="font-size: 2em; color: #28a745;">50</p>
+<p>Vendas realizadas este mês.</p>
+</div>
+<div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; margin: 10px;">
+<h3>Usuários</h3>
+<p style="font-size: 2em; color: #dc3545;">20</p>
+<p>Usuários ativos no sistema.</p>
+</div>
+</div>
+
+<section>
+<h2>Pedidos Recentes</h2>
+<table>
+<thead>
+<tr>
+<th>ID do Pedido</th>
+<th>Cliente</th>
+<th>Produto</th>
+<th>Status</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>001</td>
+<td>João Silva</td>
+<td>Produto A</td>
+<td>Entregue</td>
+<td>01/03/2023</td>
+</tr>
+<tr>
+<td>002</td>
+<td>Maria Santos</td>
+<td>Produto B</td>
+<td>Em Trânsito</td>
+<td>15/03/2023</td>
+</tr>
+<tr>
+<td>003</td>
+<td>Carlos Oliveira</td>
+<td>Produto C</td>
+<td>Pendente</td>
+<td>20/03/2023</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h2>Usuários Ativos</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Email</th>
+<th>Último Acesso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>João Silva</td>
+<td>joao@email.com</td>
+<td>Hoje</td>
+</tr>
+<tr>
+<td>Maria Santos</td>
+<td>maria@email.com</td>
+<td>Ontem</td>
+</tr>
+<tr>
+<td>Carlos Oliveira</td>
+<td>carlos@email.com</td>
+<td>2 dias atrás</td>
+</tr>
+</tbody>
+</table>
+</section>
+</main>
+<footer>
+<p>&copy; 2023 Sistema Web</p>
+</footer>
+</body>
+</html>

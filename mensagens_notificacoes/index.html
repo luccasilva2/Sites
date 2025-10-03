@@ -1,0 +1,72 @@
+<!-- Página para exibir mensagens e notificações com lista estilizada e badges -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Mensagens / Notificações</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.message-list {
+    list-style: none;
+    padding: 0;
+}
+.message-item {
+    background: #f8f9fa;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #007bff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.message-item.unread {
+    background: #e3f2fd;
+    border-left-color: #ff9800;
+}
+.badge {
+    background: #dc3545;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+.notification {
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+<a href="../index.html" class="back-button">Voltar</a>
+<header>
+<h1>Mensagens / Notificações</h1>
+<p>Veja suas mensagens e notificações recentes.</p>
+</header>
+<main>
+<ul class="message-list">
+<li class="message-item unread">
+<div class="notification">Novo pedido recebido <span class="badge">Novo</span></div>
+<p>Seu pedido #1234 foi processado com sucesso.</p>
+<small>Enviado em 15/03/2023</small>
+</li>
+<li class="message-item">
+<div class="notification">Atualização de produto</div>
+<p>O produto X foi atualizado com novas informações.</p>
+<small>Enviado em 14/03/2023</small>
+</li>
+<li class="message-item">
+<div class="notification">Promoção especial</div>
+<p>Aproveite 20% de desconto em produtos selecionados.</p>
+<small>Enviado em 13/03/2023</small>
+</li>
+<li class="message-item unread">
+<div class="notification">Reunião agendada <span class="badge">Novo</span></div>
+<p>Reunião de equipe marcada para 20/03/2023 às 10h.</p>
+<small>Enviado em 12/03/2023</small>
+</li>
+</ul>
+</main>
+<footer>
+<p>&copy; 2023 Sistema Web</p>
+</footer>
+</body>
+</html>
